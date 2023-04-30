@@ -7,8 +7,9 @@ function App() {
   return (
     <Router>
       <div id="main">
-        <nav>
-          Reset
+       <nav>
+          <button onClick={()=>window.history.replaceState(null,null,'/')}>
+          Reset</button>
         </nav>
         <KeyValueStore />
       </div>
